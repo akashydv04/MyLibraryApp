@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="cursive"
+        android:text="My Library"
+        android:textAlignment="center"
+        android:textColor="#120a8f"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/seeallbooksbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleapp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="monospace"
+        android:text="see all books"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/currentreadbookbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seeallbooksbtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="monospace"
+        android:text="Currently Reading book"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/wantreadbookbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentreadbookbtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="monospace"
+        android:text="Want to read books"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/alreadyreadbookbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wantreadbookbtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="monospace"
+        android:text="already read books"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/aboutbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alreadyreadbookbtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="monospace"
+        android:text="about"
+        android:textAllCaps="true" />
+
+</RelativeLayout>

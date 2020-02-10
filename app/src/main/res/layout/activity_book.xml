@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonsRelLayout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currently Reading"
+            android:id="@+id/btnCurrentReading"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Want To Read"
+            android:id="@+id/btnWantToRead"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/btnCurrentReading"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Read"
+            android:id="@+id/btnAlreadyRead"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnWantToRead"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/ButtonsRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstRelLayout">
+            <ImageView
+                android:id="@+id/bookImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/book"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Book Name"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/bookImage"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:id="@+id/bookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author Name"
+                android:layout_toRightOf="@id/bookImage"
+                android:layout_below="@id/bookName"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/bookPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pages"
+                android:layout_toRightOf="@id/bookImage"
+                android:layout_below="@id/bookAuthor"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bookDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstRelLayout"
+            android:layout_margin="20dp"
+            android:text="Descrpition"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
